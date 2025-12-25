@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4CAF50">
+<meta charset="UTF-8">
+<title>Hoş Geldiniz | Akıllı Kitap Öneri Sistemi</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="icon" type="image/png" href="favicon.png">
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    height:100vh;
+    background:linear-gradient(120deg,#84fab0,#8fd3f4);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.welcome-box{
+    background:#ffffff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+    text-align:center;
+    max-width:500px;
+}
+.welcome-box h1{
+    font-size:28px;
+    margin-bottom:15px;
+}
+.welcome-box p{
+    font-size:16px;
+    color:#555;
+    margin-bottom:25px;
+}
+.welcome-box button{
+    padding:14px 30px;
+    font-size:18px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+.welcome-box button:hover{
+    background:#45a049;
+}
+.basla-btn{
+    padding:16px 40px;
+    font-size:20px;
+    font-weight:bold;
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+    color:white;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(255,87,34,0.45);
+    transition:all 0.35s ease;
+    letter-spacing:0.5px;
+}
+
+/* hover effect */
+.basla-btn:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 16px 35px rgba(255,87,34,0.65);
+}
+
+/* click effect */
+.basla-btn:active{
+    transform:scale(0.97);
+    box-shadow:0 6px 15px rgba(255,87,34,0.4);
+}
+        const themeBtn = document.querySelector(".theme-btn");
+
+function toggleDark(){
+  document.body.classList.toggle("dark");
+
+  if(document.body.classList.contains("dark")){
+    themeBtn.innerHTML = "☀️";
+    localStorage.setItem("theme","dark");
+  }else{
+    themeBtn.innerHTML = "🌙";
+    localStorage.setItem("theme","light");
+  }
+}
+
+/* Remember theme */
+if(localStorage.getItem("theme")==="dark"){
+  document.body.classList.add("dark");
+  themeBtn.innerHTML = "☀️";
+}
+/* 🌗 Toggle Button */
+.theme-btn{
+  position:fixed;
+  top:20px;
+  right:20px;
+  background:linear-gradient(135deg,#111827,#334155);
+  color:#fff;
+  border:none;
+  padding:12px 18px;
+  border-radius:30px;
+  cursor:pointer;
+  font-size:14px;
+  box-shadow:0 5px 15px rgba(0,0,0,.4);
+  transition:.3s;
+}
+.theme-btn:hover{
+  transform:scale(1.05);
+}
+/* Phone */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Computer */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  max-width: 800px;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center-icon{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:40px 0;
+}
+
+.center-icon img{
+  width:120px;
+  height:auto;
+  animation:floatLogo 4s ease-in-out infinite;
+}
+    /* 🌙 GLOBAL DARK MODE */
+body.dark{
+  background:#0f172a;
+  color:#e5e7eb;
+}
+
+/* Main container */
+body.dark .container{
+  background:#020617;
+}
+
+/* Text */
+body.dark p,
+body.dark span,
+body.dark div{
+  color:#e5e7eb;
+}
+
+/* Book cards */
+body.dark .book-card{
+  background:#020617;
+  color:#e5e7eb;
+  box-shadow:0 10px 25px rgba(255,255,255,.05);
+}
+
+/* Book description */
+body.dark .book-detail{
+  color:#cbd5f5;
+}
+
+/* AI boxes */
+body.dark .ai-box,
+body.dark .ai-note{
+  background:#020617;
+  border-left-color:#38bdf8;
+  color:#e5e7eb;
+}
+
+/* Popup */
+body.dark .notify-box{
+  background:#020617;
+  color:#e5e7eb;
+}
+
+/* Buttons */
+body.dark .back-btn,
+body.dark .read-btn{
+  background:linear-gradient(135deg,#2563eb,#0891b2);
+}
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  min-height: 44px; /* Finger friendly */
+}
+</style>
+</head>
+<body>
+
+<div class="welcome-box">
+    <h1>📚 Akıllı Kitap Öneri Sistemine Hoş Geldiniz</h1>
+    <p>
+        Bu sistem, yaş grubunuza ve ilgi alanlarınıza göre
+        size en uygun kitapları önermek için tasarlanmıştır.
+        Okuma yolculuğunuza hemen başlayın!
+    </p>
+
+<a href="başla.html">
+  <button class="basla-btn">🚀 Başla</button>
+</a>
+
+</div>
+<button class="theme-btn" onclick="toggleDark()">🌙</button>
+
+ <script>
+  function toggleDark(){
+  document.body.classList.toggle("dark");
+
+  if(document.body.classList.contains("dark")){
+    localStorage.setItem("theme","dark");
+  }else{
+    localStorage.setItem("theme","light");
+  }
+}
+
+/* Remember theme */
+if(localStorage.getItem("theme")==="dark"){
+  document.body.classList.add("dark");
+}
+const themeBtn = document.querySelector(".theme-btn");
+
+function toggleDark(){
+  document.body.classList.toggle("dark");
+
+  if(document.body.classList.contains("dark")){
+    themeBtn.innerHTML = "☀️";
+    localStorage.setItem("theme","dark");
+  }else{
+    themeBtn.innerHTML = "🌙";
+    localStorage.setItem("theme","light");
+  }
+}
+
+/* Remember theme */
+if(localStorage.getItem("theme")==="dark"){
+  document.body.classList.add("dark");
+  themeBtn.innerHTML = "☀️";
+}
+
+element.addEventListener("click", () => {});   
+ </script>
+</body>
+</html>
