@@ -275,8 +275,8 @@ if (kitapVerisi[genre]) {
     books.push({
       title: item.ad,
       img: item.kapak,
-author: item.yazar ? item.yazar : " ",
-
+      link: item.link,
+      author: item.yazar ? item.yazar : " ",
       summary: {
         short: item.ozet[ageKey] || "Bu yaş grubu için özet yok.",
         long: item.ozet[ageKey] || "Bu yaş grubu için detaylı özet bulunamadı."
@@ -304,14 +304,21 @@ books.forEach((b,i)=>{
    🧠 AI bu kitabı, ${age} yaş grubunun okuma seviyesine ve ${genre} türüne uygun olduğu için önerdi.
    </div>
  </div>`;
-  div.onclick = () => {
+div.onclick = () => {
+
   nTitle.innerText = b.title;
   nAuthor.innerText = b.author;
   nText.innerText = b.summary.long;
   nImg.src = b.img;
 
-  document.getElementById("notify").classList.add("show");
+  const btn = document.getElementById("readBtn");
+
+  btn.onclick = function(){
+    window.open(b.link);
   };
+
+  document.getElementById("notify").classList.add("show");
+};
 
 
  list.appendChild(div);
