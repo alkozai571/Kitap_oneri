@@ -556,49 +556,49 @@ ozet:{
 "17-19":"Sömürge sonrası toplum.",
 "20+":"Antropolojik gözlem."
 }},
-{ad:"Kutup Günlükleri", yazar:"", kapak:"kapaklar/gezi4.jpg", link:"", ozet:{
+{ad:"Kutup Günlükleri", yazar:"", kapak:"kapaklar/gezi4.jpg", link:"https://tr.wikipedia.org/wiki/G%C3%B6kk%C3%BCre#G%C3%BCnl%C3%BCk_hareket", ozet:{
 "8-10":"Buzlar ülkesi.",
 "11-13":"Zorlu doğa koşulları.",
 "14-16":"İnsan ve doğa.",
 "17-19":"Keşif ruhu.",
 "20+":"Bilimsel seyahat anlatısı."
 }},
-{ad:"Anadolu Notları", yazar:"", kapak:"kapaklar/gezi5.jpg", link:"", ozet:{
+{ad:"Anadolu Notları", yazar:"	Reşat Nuri Güntekin", kapak:"kapaklar/gezi5.jpg", link:"https://tr.wikipedia.org/wiki/Anadolu_Notlar%C4%B1", ozet:{
 "8-10":"Türkiye’yi tanıyalım.",
 "11-13":"Şehirler ve insanlar.",
 "14-16":"Kültürel zenginlik.",
 "17-19":"Toplumsal yapı.",
 "20+":"Anadolu kültürü."
 }},
-{ad:"Uzakdoğu Seyahati", yazar:"", kapak:"kapaklar/gezi6.jpg", link:"", ozet:{
+{ad:"Uzakdoğu Seyahati", yazar:"Abdürreşid İbrahim", kapak:"kapaklar/gezi6.jpg", link:"https://tr.wikipedia.org/wiki/Abd%C3%BCrre%C5%9Fid_%C4%B0brahim", ozet:{
 "8-10":"Uzak ülkeler.",
 "11-13":"Farklı gelenekler.",
 "14-16":"Kültür karşılaştırması.",
 "17-19":"Modernleşme etkileri.",
 "20+":"Küresel bakış."
 }},
-{ad:"Avrupa Günlüğü", yazar:"", kapak:"kapaklar/gezi7.jpg", link:"", ozet:{
+{ad:"Avrupa Günlüğü", yazar:"", kapak:"kapaklar/gezi7.jpg", link:"https://tr.wikipedia.org/wiki/Avrupa_tarihi", ozet:{
 "8-10":"Avrupa şehirleri.",
 "11-13":"Tarihi mekânlar.",
 "14-16":"Kültür turu.",
 "17-19":"Toplum karşılaştırması.",
 "20+":"Avrupa medeniyeti."
 }},
-{ad:"Asya Seyahatnamesi", yazar:"", kapak:"kapaklar/gezi8.jpg", link:"", ozet:{
+{ad:"Asya Seyahatnamesi", yazar:"	Evliya Çelebi", kapak:"kapaklar/gezi8.jpg", link:"https://tr.wikipedia.org/wiki/Seyahatn%C3%A2me_(Evliya_%C3%87elebi)", ozet:{
 "8-10":"Asya’yı tanıyalım.",
 "11-13":"Geleneksel yaşam.",
 "14-16":"Farklı kültürler.",
 "17-19":"Toplumsal yapı.",
 "20+":"Kültürel inceleme."
 }},
-{ad:"Amerika Günlükleri", yazar:"", kapak:"kapaklar/gezi9.jpg", link:"", ozet:{
+{ad:"Amerika Günlükleri", yazar:"", kapak:"kapaklar/gezi9.jpg", link:"https://tr.wikipedia.org/wiki/Amerika_Birle%C5%9Fik_Devletleri", ozet:{
 "8-10":"Büyük şehirler.",
 "11-13":"Modern yaşam.",
 "14-16":"Şehir kültürü.",
 "17-19":"Tüketim toplumu.",
 "20+":"Modern dünya eleştirisi."
 }},
-{ad:"Dünya Atlası Gezi Yazıları", yazar:"", kapak:"kapaklar/gezi10.jpg", link:"", ozet:{
+{ad:"Dünya Atlası Gezi Yazıları", yazar:"", kapak:"kapaklar/gezi10.jpg", link:"https://www.turkedebiyati.org/gezi-seyahat-yazisi/", ozet:{
 "8-10":"Dünyayı tanıyalım.",
 "11-13":"Ülkeler ve insanlar.",
 "14-16":"Coğrafya bilgisi.",
