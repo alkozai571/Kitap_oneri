@@ -426,21 +426,21 @@ ozet:{
 "17-19":"Toplumsal yapı ve gelenekler.",
 "20+":"Türk destansı anlatımının temeli."
 }},
-{ad:"Nasreddin Hoca Fıkraları", yazar:"", kapak:"kapaklar/masal6.jpg", link:"https://tr.wikipedia.org/wiki/Nasreddin_Hoca", ozet:{
+{ad:"Nasreddin Hoca Fıkraları", yazar:"Uğur Demir", kapak:"kapaklar/masal6.jpg", link:"https://tr.wikipedia.org/wiki/Nasreddin_Hoca", ozet:{
 "8-10":"Komik ve düşündürücü fıkralar.",
 "11-13":"Akıl dolu mizah örnekleri.",
 "14-16":"Toplumsal eleştiriler.",
 "17-19":"İroni ve bilgelik.",
 "20+":"Halk mizahının güçlü temsilcisi."
 }},
-{ad:"Andersen Masalları", yazar:"", kapak:"kapaklar/masal7.jpg", link:"https://tr.wikipedia.org/wiki/Andersen_Masallar%C4%B1_(kitap)", ozet:{
+{ad:"Andersen Masalları", yazar:"Hans Christian Andersen", kapak:"kapaklar/masal7.jpg", link:"https://tr.wikipedia.org/wiki/Andersen_Masallar%C4%B1_(kitap)", ozet:{
 "8-10":"Duygusal ve hayal dolu masallar.",
 "11-13":"İyilik ve fedakârlık teması.",
 "14-16":"İnsan duyguları ön planda.",
 "17-19":"Toplumsal yalnızlık anlatılır.",
 "20+":"Evrensel masal anlatımı sunar."
 }},
-{ad:"Grimm Masalları", yazar:"	Grimm Kardeşler", kapak:"kapaklar/masal8.jpg", link:"https://tr.wikipedia.org/wiki/Grimm_Masallar%C4%B1", ozet:{
+{ad:"Grimm Masalları", yazar:"	Grimms' Fairy Tales", kapak:"kapaklar/masal8.jpg", link:"https://tr.wikipedia.org/wiki/Grimm_Masallar%C4%B1", ozet:{
 "8-10":"Klasik peri masalları.",
 "11-13":"İyiler ve kötüler.",
 "14-16":"Masalların karanlık yüzü.",
@@ -454,7 +454,7 @@ ozet:{
 "17-19":"Kültürel kimlik.",
 "20+":"Sözlü tarih kaynağı."
 }},
-{ad:"Mitolojik Masallar", yazar:"", kapak:"kapaklar/masal10.jpg", link:"https://en.wikipedia.org/wiki/Zarlik_and_Munglik", ozet:{
+{ad:"Mitolojik Masallar", yazar:"Müzehher Erim", kapak:"kapaklar/masal10.jpg", link:"https://en.wikipedia.org/wiki/Zarlik_and_Munglik", ozet:{
 "8-10":"Tanrılar ve kahramanlar.",
 "11-13":"Mitolojik hikâyeler.",
 "14-16":"İnsanlık mitleri.",
@@ -463,7 +463,7 @@ ozet:{
 }}
 ]
 ,"Destan":[
-{ad:"Manas Destanı", yazar:"", kapak:"kapaklar/destan1.jpg", link:"https://www.kitapyurdu.com/kitap/manas-destani-turkiye-turkcesi-ile/151009.html?srsltid=AfmBOoqaaWGJl1G4tbBhw63a4wkVvjRrty20luFFlgIeJDoJIxFnfUBm", ozet:{
+{ad:"Manas Destanı", yazar:"Keneş Yusupov (Yusuf) (Bengü Yayınları), Tuncer Gülensoy (AKM Yay.) ve Hasan Erimez (Ötüken)", kapak:"kapaklar/destan1.jpg", link:"https://www.kitapyurdu.com/kitap/manas-destani-turkiye-turkcesi-ile/151009.html?srsltid=AfmBOoqaaWGJl1G4tbBhw63a4wkVvjRrty20luFFlgIeJDoJIxFnfUBm", ozet:{
 "8-10":"Cesur bir kahramanın hikâyesi.",
 "11-13":"Kahramanlık ve mücadele.",
 "14-16":"Toplumsal birlik.",
@@ -477,56 +477,56 @@ ozet:{
 "17-19":"Türk siyasi düşüncesi.",
 "20+":"Mitolojik tarih anlatımı."
 }},
-{ad:"Ergenekon Destanı", yazar:"", kapak:"kapaklar/destan3.jpg", link:"https://www.amazon.com.tr/Ergenekon-Destan%C4%B1-%C3%96mer-Emre-Erdur/dp/6258271464", ozet:{
+{ad:"Ergenekon Destanı", yazar:"Hasan Erimez ", kapak:"kapaklar/destan3.jpg", link:"https://www.amazon.com.tr/Ergenekon-Destan%C4%B1-%C3%96mer-Emre-Erdur/dp/6258271464", ozet:{
 "8-10":"Demir dağı eriten Türkler.",
 "11-13":"Özgürlük mücadelesi.",
 "14-16":"Yeniden doğuş teması.",
 "17-19":"Milli bilinç.",
 "20+":"Kolektif kimlik sembolü."
 }},
-{ad:"İlyada", yazar:"", kapak:"kapaklar/destan4.jpg", link:"https://www.amazon.com.tr/%C4%B0lyada-Homeros/dp/6051214356", ozet:{
+{ad:"İlyada", yazar:"Homeros", kapak:"kapaklar/destan4.jpg", link:"https://www.amazon.com.tr/%C4%B0lyada-Homeros/dp/6051214356", ozet:{
 "8-10":"Savaş ve kahramanlar.",
 "11-13":"Truva Savaşı.",
 "14-16":"Onur ve savaş.",
 "17-19":"İnsan tutkuları.",
 "20+":"Batı destan geleneği."
 }},
-{ad:"Odysseia", yazar:"", kapak:"kapaklar/destan5.jpg", link:"https://en.wikipedia.org/wiki/Odyssey", ozet:{
+{ad:"Odysseia", yazar:"Homer", kapak:"kapaklar/destan5.jpg", link:"https://en.wikipedia.org/wiki/Odyssey", ozet:{
 "8-10":"Uzun yolculuk hikâyesi.",
 "11-13":"Macera dolu dönüş.",
 "14-16":"Zeka ve sabır.",
 "17-19":"Bireysel mücadele.",
 "20+":"Epik anlatının zirvesi."
 }},
-{ad:"Beowulf", yazar:"", kapak:"kapaklar/destan6.jpg", link:"https://en.wikipedia.org/wiki/Beowulf", ozet:{
+{ad:"Beowulf", yazar:"Bilinmiyor (Anonim Beowulf Şairi).", kapak:"kapaklar/destan6.jpg", link:"https://en.wikipedia.org/wiki/Beowulf", ozet:{
 "8-10":"Canavarlarla savaş.",
 "11-13":"Cesaret ve güç.",
 "14-16":"Kahramanlık ideali.",
 "17-19":"Liderlik teması.",
 "20+":"Cermen destanı."
 }},
-{ad:"Şehname", yazar:"", kapak:"kapaklar/destan7.jpg", link:"https://en.wikipedia.org/wiki/%C5%9Eehn%C4%81me-i_N%C4%81dir%C4%AB", ozet:{
+{ad:"Şehname", yazar:"Firdevsî (doğumu: 940 - ölümü: 1020 civarı)", kapak:"kapaklar/destan7.jpg", link:"https://en.wikipedia.org/wiki/%C5%9Eehn%C4%81me-i_N%C4%81dir%C4%AB", ozet:{
 "8-10":"İran kahramanları.",
 "11-13":"Krallar ve savaşlar.",
 "14-16":"Tarih ve mit.",
 "17-19":"İktidar anlatısı.",
 "20+":"Doğu destan geleneği."
 }},
-{ad:"Kalevala", yazar:"", kapak:"kapaklar/destan8.jpg", link:"https://en.wikipedia.org/wiki/Kalevala", ozet:{
+{ad:"Kalevala", yazar:"Elias Lönnrot ", kapak:"kapaklar/destan8.jpg", link:"https://en.wikipedia.org/wiki/Kalevala", ozet:{
 "8-10":"Büyülü kahramanlar.",
 "11-13":"Fin mitolojisi.",
 "14-16":"Doğa ve insan.",
 "17-19":"Ulusal kimlik.",
 "20+":"Avrupa destan edebiyatı."
 }},
-{ad:"Nibelungen Destanı", yazar:"", kapak:"kapaklar/destan9.jpg", link:"https://www.nadirkitap.com/nibelungen-bin-yillik-cermen-destani-derleme-kitap20279518.html?srsltid=AfmBOopI0LS25TEvp-r_hhuRTYqhbMI11l2DeTIuDJhTNNDiX0A43m3J", ozet:{
+{ad:"Nibelungen Destanı", yazar:"Anonim.", kapak:"kapaklar/destan9.jpg", link:"https://www.nadirkitap.com/nibelungen-bin-yillik-cermen-destani-derleme-kitap20279518.html?srsltid=AfmBOopI0LS25TEvp-r_hhuRTYqhbMI11l2DeTIuDJhTNNDiX0A43m3J", ozet:{
 "8-10":"Ejderha ve kahraman.",
 "11-13":"İhanet ve güç.",
 "14-16":"Trajik kader.",
 "17-19":"İntikam teması.",
 "20+":"Alman destanı."
 }},
-{ad:"Alpamış Destanı", yazar:"", kapak:"kapaklar/destan10.jpg", link:"https://www.kulturajans.com/yayinlar/alpamis-destan-1258", ozet:{
+{ad:"Alpamış Destanı", yazar:"Fazıl Yoldaş Oğlu (Özbek varyantı)", kapak:"kapaklar/destan10.jpg", link:"https://www.kulturajans.com/yayinlar/alpamis-destan-1258", ozet:{
 "8-10":"Cesur Alpamış.",
 "11-13":"Aşk ve kahramanlık.",
 "14-16":"Toplumsal değerler.",
@@ -535,28 +535,28 @@ ozet:{
 }}
 ]
 ,"Gezi":[
-{ad:"Seyahatname", yazar:"", kapak:"kapaklar/gezi1.jpg", link:"https://en.wikipedia.org/wiki/Seyahatn%C3%A2me", ozet:{
+{ad:"Seyahatname", yazar:"Evliya Çelebi (Bin Derviş Mehmet Zilli) ", kapak:"kapaklar/gezi1.jpg", link:"https://en.wikipedia.org/wiki/Seyahatn%C3%A2me", ozet:{
 "8-10":"Gezilen yerlerin hikâyesi.",
 "11-13":"Farklı ülkeler tanıtılır.",
 "14-16":"Kültürel gözlemler.",
 "17-19":"Toplumsal yapı analizi.",
 "20+":"Tarihsel gezi edebiyatı."
 }},
-{ad:"İzlanda Günlükleri", yazar:"", kapak:"kapaklar/gezi2.jpg", link:"https://www.kitapyurdu.com/kitap/izlanda-balikcisi/459355.html?srsltid=AfmBOoq9VVKNHablGK2teitvX4P8NtjiGCE_CF1YxBilB79iCKEaMGcI", ozet:{
+{ad:"İzlanda Günlükleri", yazar:"Ragnar Jónasson ", kapak:"kapaklar/gezi2.jpg", link:"https://www.kitapyurdu.com/kitap/izlanda-balikcisi/459355.html?srsltid=AfmBOoq9VVKNHablGK2teitvX4P8NtjiGCE_CF1YxBilB79iCKEaMGcI", ozet:{
 "8-10":"Soğuk ülke macerası.",
 "11-13":"Doğa ve keşif.",
 "14-16":"Farklı yaşamlar.",
 "17-19":"Coğrafi gözlemler.",
 "20+":"Modern gezi yazısı."
 }},
-{ad:"Afrika Gezi Notları",kapak:"kapaklar/gezi3.jpg", link:"https://en.wikipedia.org/wiki/Gezi_Park_protests", ozet:{
+{ad:"Afrika Gezi Notları", yazar:" Okan Okumuş", kapak:"kapaklar/gezi3.jpg", link:"https://en.wikipedia.org/wiki/Gezi_Park_protests", ozet:{
 "8-10":"Afrika’yı tanıyalım.",
 "11-13":"Farklı kültürler.",
 "14-16":"İnsan yaşamı.",
 "17-19":"Sömürge sonrası toplum.",
 "20+":"Antropolojik gözlem."
 }},
-{ad:"Kutup Günlükleri", yazar:"", kapak:"kapaklar/gezi4.jpg", link:"https://tr.wikipedia.org/wiki/G%C3%B6kk%C3%BCre#G%C3%BCnl%C3%BCk_hareket", ozet:{
+{ad:"Kutup Günlükleri", yazar:" Vitaliy Georgiyevich Volovich. ", kapak:"kapaklar/gezi4.jpg", link:"https://tr.wikipedia.org/wiki/G%C3%B6kk%C3%BCre#G%C3%BCnl%C3%BCk_hareket", ozet:{
 "8-10":"Buzlar ülkesi.",
 "11-13":"Zorlu doğa koşulları.",
 "14-16":"İnsan ve doğa.",
@@ -591,14 +591,14 @@ ozet:{
 "17-19":"Toplumsal yapı.",
 "20+":"Kültürel inceleme."
 }},
-{ad:"Amerika Günlükleri", yazar:"", kapak:"kapaklar/gezi9.jpg", link:"https://tr.wikipedia.org/wiki/Amerika_Birle%C5%9Fik_Devletleri", ozet:{
+{ad:"Amerika Günlükleri", yazar:"Albert Camus ", kapak:"kapaklar/gezi9.jpg", link:"https://tr.wikipedia.org/wiki/Amerika_Birle%C5%9Fik_Devletleri", ozet:{
 "8-10":"Büyük şehirler.",
 "11-13":"Modern yaşam.",
 "14-16":"Şehir kültürü.",
 "17-19":"Tüketim toplumu.",
 "20+":"Modern dünya eleştirisi."
 }},
-{ad:"Dünya Atlası Gezi Yazıları", yazar:"", kapak:"kapaklar/gezi10.jpg", link:"https://www.turkedebiyati.org/gezi-seyahat-yazisi/", ozet:{
+{ad:"Dünya Atlası Gezi Yazıları", yazar:"Anja De Lombaert", kapak:"kapaklar/gezi10.jpg", link:"https://www.turkedebiyati.org/gezi-seyahat-yazisi/", ozet:{
 "8-10":"Dünyayı tanıyalım.",
 "11-13":"Ülkeler ve insanlar.",
 "14-16":"Coğrafya bilgisi.",
