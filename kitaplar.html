@@ -122,22 +122,24 @@ if (kitapVerisi[genre]) {
           </div>
         </div>`;
       
-      div.onclick = () => {
-        // Show details in the notification
-        const nTitle = document.getElementById("nTitle");
-        const nAuthor = document.getElementById("nAuthor");
-        const nText = document.getElementById("nText");
-        const nImg = document.getElementById("nImg");
+div.onclick = () => {
+  const nTitle = document.getElementById("nTitle");
+  const nAuthor = document.getElementById("nAuthor");
+  const nText = document.getElementById("nText");
+  const nImg = document.getElementById("nImg");
+  const btn = document.getElementById("readBtn");
 
-        // Update the popup with the book details
-        nTitle.innerText = item.ad;
-        nAuthor.innerText = item.yazar;
-        nText.innerText = item.ozet[age];  // Detailed summary
-        nImg.src = item.kapak;
+  nTitle.innerText = item.ad;
+  nAuthor.innerText = item.yazar ? item.yazar : "Bilinmeyen yazar";
+  nText.innerText = item.ozet[age];
+  nImg.src = item.kapak;
 
-        // Make the popup visible
-        document.getElementById("notify").classList.add("show");
-      };
+  btn.onclick = () => {
+    if(item.link) window.open(item.link, "_blank");
+  };
+
+  document.getElementById("notify").classList.add("show");
+};
 
       list.appendChild(div); // Append book card to the list
     });
