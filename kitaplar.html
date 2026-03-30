@@ -15,6 +15,21 @@
 /* Existing CSS here... */
 
 /* The notification (popup) container */
+  /* Dark mode styles */
+body.dark {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark .book-card {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark .notify-box {
+    background-color: #333;
+    color: #fff;
+}
 .notify {
   position: fixed;
   inset: 0;
@@ -144,6 +159,10 @@ birlikte değerlendirerek öneri listesini oluşturmuştur.
 </div>
 
 <div class="book-grid" id="bookList"></div>
+</div>
+  <!-- Geri/Ana sayfa button -->
+<div style="text-align:center; margin:40px 0;">
+    <button class="back-btn" onclick="goHome()">⬅️ Geri/Ana sayfa</button>
 </div>
 
 <button class="theme-btn" onclick="toggleDark()">🌙</button>
