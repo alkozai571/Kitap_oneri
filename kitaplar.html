@@ -268,10 +268,24 @@ age + " yaş grubu için " + genre + " türünde önerilen kitaplar:";
 /* 🔗 CONNECT data.js */
 const ageKey = age; // example: "11-13"
 const books = [];
+  function getRandomBookByAge(category, ageKey) {
+  const books = kitapVerisi[category];
+  if (!books) return null;
+
+  // filter books that have summary for this age
+  const filtered = books.filter(book => book.ozet[ageKey]);
+
+  if (filtered.length === 0) return null;
+
+  const randomIndex = Math.floor(Math.random() * filtered.length);
+  return filtered[randomIndex];
+}
 
 /* Check genre exists */
 if (kitapVerisi[genre]) {
-  kitapVerisi[genre].forEach(item => {
+  const item = getRandomBookByAge(genre, ageKey);
+
+  if (item) {
     books.push({
       title: item.ad,
       img: item.kapak,
@@ -282,7 +296,7 @@ if (kitapVerisi[genre]) {
         long: item.ozet[ageKey] || "Bu yaş grubu için detaylı özet bulunamadı."
       }
     });
-  });
+  }
 } else {
   document.getElementById("info").innerText =
     "Bu tür için kitap bulunamadı.";
