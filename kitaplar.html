@@ -10,9 +10,9 @@
 <title>Kitap Önerileri</title>
 <link rel="stylesheet" href="style.css">
 
-  /* Your CSS styles here */
-  <style>
-/* Existing CSS here ... */
+
+<style>
+/* Existing CSS here... */
 
 /* The notification (popup) container */
 .notify {
@@ -35,15 +35,96 @@
   pointer-events: auto;
 }
 
-/* Optionally, the inner popup box styling */
+/* Smaller and more compact inner popup box styling */
 .notify-box {
   background: #fff;
-  border-radius: 20px;
-  padding: 25px;
-  max-width: 450px;
+  border-radius: 12px;
+  padding: 15px;
+  max-width: 380px; /* Narrower width */
   width: 90%;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   position: relative;
+  animation: zoomIn 0.4s ease-out; /* Smooth zoom-in effect */
+}
+
+/* Header style for the popup */
+.notify-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notify-header img {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notify-header h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Popup text (author, etc.) */
+.author {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Content text (description) */
+.desc {
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Footer buttons and tag */
+.notify-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.read-btn {
+  background: #3b82f6;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.read-btn:hover {
+  background: #06b6d4;
+  transform: scale(1.05);
+}
+
+.tag {
+  font-size: 12px;
+  color: #333;
+  background: #f0f9ff;
+  padding: 5px 12px;
+  border-radius: 16px;
+}
+
+/* Add smooth zoom-in effect */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 </style>
 
@@ -122,6 +203,7 @@ if (kitapVerisi[genre]) {
           </div>
         </div>`;
       
+// When a book is clicked
 div.onclick = () => {
   const nTitle = document.getElementById("nTitle");
   const nAuthor = document.getElementById("nAuthor");
@@ -129,15 +211,18 @@ div.onclick = () => {
   const nImg = document.getElementById("nImg");
   const btn = document.getElementById("readBtn");
 
+  // Update the popup with book details
   nTitle.innerText = item.ad;
   nAuthor.innerText = item.yazar ? item.yazar : "Bilinmeyen yazar";
-  nText.innerText = item.ozet[age];
+  nText.innerText = item.ozet[age];  // Detailed summary
   nImg.src = item.kapak;
 
+  // Handle the "Read More" button click
   btn.onclick = () => {
-    if(item.link) window.open(item.link, "_blank");
+    if (item.link) window.open(item.link, "_blank");
   };
 
+  // Show the popup
   document.getElementById("notify").classList.add("show");
 };
 
