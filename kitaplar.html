@@ -266,8 +266,7 @@ document.getElementById("info").innerText =
 age + " yaş grubu için " + genre + " türünde önerilen kitaplar:";
 
 /* 🔗 CONNECT data.js */
-const ageKey = age; // example: "11-13"
-const books = [];
+
 // Function to get unique books for the selected age and genre
 function getBooksForAgeAndGenre(category, ageKey, count = 10) {
   const allBooks = kitapVerisi[category];
@@ -287,18 +286,13 @@ function getBooksForAgeAndGenre(category, ageKey, count = 10) {
   return shuffled.slice(0, count);
 }
 
-/* Check genre exists */
+
+
+
 if (kitapVerisi[genre]) {
 
-const books = [];  // Clear any existing books before adding new ones
-const ageKey = age; // Example: "11-13"
-const alreadyShown = [];  // Keep track of books shown for this age and genre
-
-// Fetch books for the selected genre and age
-if (kitapVerisi[genre]) {
   const selectedBooks = getBooksForAgeAndGenre(genre, ageKey, 10);
 
-  // Push the selected books to the "books" array
   selectedBooks.forEach(item => {
     books.push({
       title: item.ad,
@@ -310,9 +304,11 @@ if (kitapVerisi[genre]) {
         long: item.ozet[ageKey] || "Bu yaş grubu için detaylı özet bulunamadı."
       }
     });
-    // Keep track of the book to avoid duplication (we are using the title for uniqueness)
-    alreadyShown.push(item.ad);
   });
+
+} else {
+  document.getElementById("info").innerText =
+    "Bu tür için kitap bulunamadı.";
 } else {
   document.getElementById("info").innerText = "Bu tür için kitap bulunamadı.";
 }
@@ -372,7 +368,6 @@ if(localStorage.getItem("theme")==="dark"){
 function closeNotify(){
   document.getElementById("notify").classList.remove("show");
 }
-element.addEventListener("click", () => {});
 
 
 </script>
