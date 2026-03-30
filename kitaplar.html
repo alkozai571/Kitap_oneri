@@ -320,38 +320,36 @@ if (kitapVerisi[genre]) {
 
 const list = document.getElementById("bookList");
 
-books.forEach((b,i)=>{
- const div=document.createElement("div");
- div.className="book-card";
- div.innerHTML=`
- <img src="${b.img}">
- <div class="book-title">${b.title}</div>
- <p>${b.summary.short}</p>
- <div class="book-detail" id="d${i}">
-   <p><strong>Detaylı Özet:</strong> ${b.summary.long}</p>
-   <div class="ai-note">
-   🧠 AI bu kitabı, ${age} yaş grubunun okuma seviyesine ve ${genre} türüne uygun olduğu için önerdi.
-   </div>
- </div>`;
-div.onclick = () => {
+books.forEach((b, i) => {
+  const div = document.createElement("div");
+  div.className = "book-card";
+  div.innerHTML = `
+    <img src="${b.img}">
+    <div class="book-title">${b.title}</div>
+    <p>${b.summary.short}</p>
+    <div class="book-detail" id="d${i}">
+      <p><strong>Detaylı Özet:</strong> ${b.summary.long}</p>
+      <div class="ai-note">
+        🧠 AI bu kitabı, ${age} yaş grubunun okuma seviyesine ve ${genre} türüne uygun olduğu için önerdi.
+      </div>
+    </div>`;
+  div.onclick = () => {
+    nTitle.innerText = b.title;
+    nAuthor.innerText = b.author;
+    nText.innerText = b.summary.long;
+    nImg.src = b.img;
 
-  nTitle.innerText = b.title;
-  nAuthor.innerText = b.author;
-  nText.innerText = b.summary.long;
-  nImg.src = b.img;
+    const btn = document.getElementById("readBtn");
 
-  const btn = document.getElementById("readBtn");
+    btn.onclick = function () {
+      window.open(b.link);
+    };
 
-  btn.onclick = function(){
-    window.open(b.link);
+    document.getElementById("notify").classList.add("show");
   };
 
-  document.getElementById("notify").classList.add("show");
-};
-
-
- list.appendChild(div);
- });
+  list.appendChild(div);
+});
 
  function goHome(){
   window.location.href = "index.html";
