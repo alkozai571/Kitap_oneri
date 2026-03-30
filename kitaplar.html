@@ -32,7 +32,8 @@ birlikte değerlendirerek öneri listesini oluşturmuştur.
 
 <button class="theme-btn" onclick="toggleDark()">🌙</button>
 
-<script>
+/*script> */
+  <script>
 // Fetching age and genre from localStorage
 const age = localStorage.getItem("ageGroup");
 const genre = localStorage.getItem("genre");
@@ -93,16 +94,13 @@ if (kitapVerisi[genre]) {
         const nText = document.getElementById("nText");
         const nImg = document.getElementById("nImg");
 
+        // Update the popup with the book details
         nTitle.innerText = item.ad;
         nAuthor.innerText = item.yazar;
         nText.innerText = item.ozet[age];  // Detailed summary
         nImg.src = item.kapak;
 
-        const btn = document.getElementById("readBtn");
-        btn.onclick = () => {
-          window.open(item.link); // Open book link
-        };
-
+        // Make the popup visible
         document.getElementById("notify").classList.add("show");
       };
 
@@ -136,8 +134,113 @@ function closeNotify() {
 function goHome() {
   window.location.href = "index.html"; // Redirect to home page
 }
-
 </script>
+
+// Fetching age and genre from localStorage
+//const age = localStorage.getItem("ageGroup");
+//const genre = localStorage.getItem("genre");
+
+//document.getElementById("info").innerText = age + " yaş grubu için " + genre + " türünde önerilen kitaplar:";
+
+/* 🔗 CONNECT data.js */
+
+// Function to get books based on age group and genre
+//function getBooksForAgeAndGenre(category, ageKey, count = 10) {
+ // const allBooks = kitapVerisi[category]; // Get all books of selected genre
+  //if (!allBooks) return []; // If no books found, return empty array
+
+  // Filter by age group (ensure that there are books with the correct summary for this age)
+//  const filtered = allBooks.filter(book => book.ozet[ageKey]);
+
+  // If there are fewer than the requested number of books, return all available books
+//  if (filtered.length < count) {
+ //   return filtered;
+  }
+
+  // Randomize the filtered books and return the first "count" books
+//  const shuffled = filtered.sort(() => 0.5 - Math.random());
+//  return shuffled.slice(0, count);
+}
+
+// Ensure that the genre exists in kitapVerisi
+//if (kitapVerisi[genre]) {
+
+  // Get books for the selected genre and age group
+  //const selectedBooks = getBooksForAgeAndGenre(genre, age, 10); // Use the age as the key
+
+  // If no books were found
+//  if (selectedBooks.length === 0) {
+//    document.getElementById("info").innerText = "Bu tür için kitap bulunamadı.";
+//  } else {
+    // Create the books dynamically
+ //   const list = document.getElementById("bookList");
+
+//    selectedBooks.forEach((item, i) => {
+      //const div = document.createElement("div");
+   //   div.className = "book-card";
+  //    div.innerHTML = `
+  //      <img src="${item.kapak}">
+  //      <div class="book-title">${item.ad}</div>
+   //     <p>${item.ozet[age]}</p>
+   //     <div class="book-detail" id="d${i}">
+    //      <p><strong>Detaylı Özet:</strong> ${item.ozet[age]}</p>
+    //      <div class="ai-note">
+      //      🧠 AI bu kitabı, ${age} yaş grubunun okuma seviyesine ve ${genre} türüne uygun olduğu için önerdi.
+      //    </div>
+    //    </div>`;
+      
+//      div.onclick = () => {
+        // Show details in the notification
+   //     const nTitle = document.getElementById("nTitle");
+  //      const nAuthor = document.getElementById("nAuthor");
+   //     const nText = document.getElementById("nText");
+   //     const nImg = document.getElementById("nImg");
+
+   //     nTitle.innerText = item.ad;
+   //     nAuthor.innerText = item.yazar;
+    //    nText.innerText = item.ozet[age];  // Detailed summary
+   //     nImg.src = item.kapak;
+
+   //     const btn = document.getElementById("readBtn");
+   //     btn.onclick = () => {
+    //      window.open(item.link); // Open book link
+        };
+
+    //    document.getElementById("notify").classList.add("show");
+      };
+
+    //  list.appendChild(div); // Append book card to the list
+//    });
+//  }
+//} else {
+//  document.getElementById("info").innerText = "Bu tür için kitap bulunamadı.";
+}
+//
+// Dark mode toggle
+function toggleDark() {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// Remember theme
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+}
+
+function closeNotify() {
+  document.getElementById("notify").classList.remove("show");
+}
+
+function goHome() {
+  window.location.href = "index.html"; // Redirect to home page
+}
+
+///script>
 
 <div style="text-align:center; margin:40px 0;">
   <button class="back-btn" onclick="goHome()">⬅️ Geri/Ana sayfa</button>
