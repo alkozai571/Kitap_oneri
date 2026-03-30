@@ -268,25 +268,37 @@ age + " yaş grubu için " + genre + " türünde önerilen kitaplar:";
 /* 🔗 CONNECT data.js */
 const ageKey = age; // example: "11-13"
 const books = [];
-function getRandomBooksByAge(category, ageKey, count = 4) {
+// Function to get unique books for the selected age and genre
+function getBooksForAgeAndGenre(category, ageKey, count = 10) {
   const allBooks = kitapVerisi[category];
   if (!allBooks) return [];
 
-  // Filter by age
+  // Filter by age group (ensure that there are books with the correct summary for this age)
   const filtered = allBooks.filter(book => book.ozet[ageKey]);
 
-  // Shuffle array
-  const shuffled = filtered.sort(() => 0.5 - Math.random());
+  // Check if we have enough books for the requested count
+  if (filtered.length < count) {
+    // If not enough, we show all available books for this genre and age
+    return filtered;
+  }
 
-  // Return first "count" books
+  // Shuffle the filtered books and return the first "count" books
+  const shuffled = filtered.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 }
 
 /* Check genre exists */
 if (kitapVerisi[genre]) {
 
-  const selectedBooks = getRandomBooksByAge(genre, ageKey, 4);
+const books = [];  // Clear any existing books before adding new ones
+const ageKey = age; // Example: "11-13"
+const alreadyShown = [];  // Keep track of books shown for this age and genre
 
+// Fetch books for the selected genre and age
+if (kitapVerisi[genre]) {
+  const selectedBooks = getBooksForAgeAndGenre(genre, ageKey, 10);
+
+  // Push the selected books to the "books" array
   selectedBooks.forEach(item => {
     books.push({
       title: item.ad,
@@ -298,11 +310,11 @@ if (kitapVerisi[genre]) {
         long: item.ozet[ageKey] || "Bu yaş grubu için detaylı özet bulunamadı."
       }
     });
+    // Keep track of the book to avoid duplication (we are using the title for uniqueness)
+    alreadyShown.push(item.ad);
   });
-
 } else {
-  document.getElementById("info").innerText =
-    "Bu tür için kitap bulunamadı.";
+  document.getElementById("info").innerText = "Bu tür için kitap bulunamadı.";
 }
 
 
